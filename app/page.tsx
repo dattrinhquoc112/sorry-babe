@@ -1,8 +1,10 @@
 "use client";
 import TextDelay from "@/src/components/Text";
 import TeaImage from "@/public/images/sen-tea.jpeg";
+import Sorry1 from "@/public/images/sorry1.gif";
+import Sorry2 from "@/public/images/sorry2.gif";
 
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 export default function Home() {
   const audioRef = useRef<any>(null);
   const [isResetText, setIsResetText] = useState(false);
@@ -10,7 +12,7 @@ export default function Home() {
     {
       delay: "0",
       value: "Em ưi~",
-      img: "https://gifdb.com/images/high/sorry-cute-bow-zf6lzgw5xzoji3w5.gif",
+      imgStatic: Sorry1,
     },
     {
       delay: "2",
@@ -20,7 +22,7 @@ export default function Home() {
     {
       delay: "5",
       value: "Anh xin lũi moàaaaaaaaaaaaaaaaa",
-      img: "https://media.tenor.com/GCAp1T2fAZwAAAAj/sorry-im-sorry.gif",
+      imgStatic: Sorry2,
     },
     {
       delay: "8",
